@@ -31,7 +31,7 @@ scoop -h
 - Java 🍵:
   Para instalar java, usaremos `winget`:
   ```bash
-  winget install Oracle.JDK.24 -e
+  winget install Microsoft.OpenJDK.17 -e
   ```
   Para verificar la instalación de Java (y su JDK):
   Java:
