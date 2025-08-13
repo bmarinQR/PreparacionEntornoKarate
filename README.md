@@ -38,13 +38,13 @@ scoop -h
   ```bash
   java --version
   ```
-  ![Versión Java](https://github.com/user-attachments/assets/aa6cea9b-c24c-4ccc-9eb4-c00a61a2b615)
+  ![Versión Java](https://github.com/user-attachments/assets/9a4e47bc-e8d9-45be-ac4e-eb73323c70f1)
 
   JDK:
   ```bash
   javac --version
   ```
-  ![Versión JDK](https://github.com/user-attachments/assets/c9588594-9477-4baa-876b-e40485670d41)
+  ![Versión JDK](https://github.com/user-attachments/assets/8df3c5f8-8c7f-44e9-85e9-2eca652fc5ae)
 
 - Maven 🪶:
   Para instalar maven, usaremos `scoop`:
