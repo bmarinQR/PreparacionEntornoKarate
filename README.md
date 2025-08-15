@@ -16,54 +16,54 @@ Para configurar el entorno de Karate Framework se necesita:
 
 - scoop:
 Desde una terminal de **Powershell** (no **CMD**). También es válido la aplicación de [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=es-ES&gl=co).  
-```bash
+```pwsh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
-```bash
+```pwsh
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 Para verificar que `scoop` se instaló correctamente:
-```bash
+```pwsh
 scoop -h
 ```
 ![scoop funcional](https://github.com/user-attachments/assets/26452353-ae11-44a3-8ab8-cdc0f2d48581)
 
 - Java 🍵:
   Para instalar java, usaremos `winget`:
-  ```bash
+  ```pwsh
   winget install Microsoft.OpenJDK.17 -e
   ```
   Para verificar la instalación de Java (y su JDK):
   Java:
-  ```bash
+  ```pwsh
   java --version
   ```
   ![Versión Java](https://github.com/user-attachments/assets/9a4e47bc-e8d9-45be-ac4e-eb73323c70f1)
 
   JDK:
-  ```bash
+  ```pwsh
   javac --version
   ```
   ![Versión JDK](https://github.com/user-attachments/assets/8df3c5f8-8c7f-44e9-85e9-2eca652fc5ae)
 
 - Maven 🪶:
   Para instalar maven, usaremos `scoop`:
-  ```bash
+  ```pwsh
   scoop install main/maven
   ```
   Para verificar la instalación:
-  ```bash
+  ```pwsh
   mvn --version
   ```
   ![Versión Maven](https://github.com/user-attachments/assets/e5f358fb-404e-4595-9d3d-7e3ae71e599f)
 
 - Gradle 🐘:
   Para instalar gradle, usaremos `scoop`:
-  ```bash
+  ```pwsh
   scoop install gradle
   ```
   Para verificar la instalación:
-  ```bash
+  ```pwsh
   gradle --version
   ```
   ![Versión Gradle](https://github.com/user-attachments/assets/ab8122e5-3f21-4d33-8c46-e4acfd879e9d)
@@ -82,7 +82,7 @@ scoop -h
 
 - Git (opcional):
   Para instalar Git, usaremos `winget`:
-  ```bash
+  ```pwsh
   winget install Git.Git
   ```
 
@@ -92,7 +92,7 @@ Para verificar que la instalación de todas las herramientas ha sido exitosa, ha
 - Una vez situados en esta carpeta, abriremos una terminal que nos sitúe en la ruta anteriormente mencionada:
   - ![Click derecho - terminal](https://github.com/user-attachments/assets/dd7489dd-3f53-49e9-91d8-4d11310aa461)
 - Ejecutamos el siguiente comando que importará el proyecto de prueba para verificar nuestra configuración del entorno de Karate:
-```bash
+```pwsh
 & 'mvn' archetype:generate "-DarchetypeGroupId=io.karatelabs" "-DarchetypeArtifactId=karate-archetype" "-DarchetypeVersion=X.X.X" "-DgroupId=YOUR.GROUPIDHERE" "-DartifactId=YOUR-ARTIFACT-ID-HERE" "-DinteractiveMode=false"
 ```
 Donde, se debe reemplazar:
@@ -107,7 +107,7 @@ Donde, se debe reemplazar:
   ![IDE2](https://github.com/user-attachments/assets/d31e604d-70f3-4799-bf1c-3595905d2d4f)
 - Una vez abierto el proyecto, podremos ejecutarlo de las siguientes maneras:
   - Terminal: Desde una terminal situados en la carpeta donde esta el proyecto, ejecutar el siguiente comando:
-    ```bash
+    ```pwsh
     mvn clean test
     ```
     ![mvn clean test1](https://github.com/user-attachments/assets/4b4a62c4-d171-4a53-9a38-434fd52bf46a)
